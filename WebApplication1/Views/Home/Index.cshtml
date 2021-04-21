@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    button{
+        width:30px;
+        height:30px;
+        text-align:center;
+    }
+</style>
+<form class="text-center" action="~/Home/Index" method="post">
+    <input type="text" name="digit"/>
+    <input type="text" name="digit2"/>
+    <button value="+" name="sing">+</button>
+    <button value="-" name="sing">-</button>
+    <button value="*" name="sing">*</button>
+    <button value="/" name="sing">/</button>
+</form>
