@@ -11,6 +11,7 @@ namespace PizzaShopWebApp.Models
 
         public PizzaContext(DbContextOptions<PizzaContext> options) : base(options)
         {
+            //Database.EnsureDeleted();
             Database.EnsureCreated();
         }
 

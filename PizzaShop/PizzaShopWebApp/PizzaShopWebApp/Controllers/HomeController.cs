@@ -11,21 +11,24 @@ namespace PizzaShopWebApp.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        PizzaContext db;
+        public HomeController(PizzaContext context)
         {
-            _logger = logger;
+            db = context;
         }
 
         public IActionResult Index()
         {
-            return View();
+            return View(db.Pizzas.ToList());
         }
 
-        public IActionResult Privacy()
+        [HttpGet]
+        public IActionResult Show(int? id)
         {
-            return View();
+            if (id == null)
+                return RedirectToAction("Index");
+
+            return View("InfoProduct");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
@@ -33,5 +36,6 @@ namespace PizzaShopWebApp.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
     }
 }
