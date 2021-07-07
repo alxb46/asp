@@ -27,8 +27,15 @@ namespace PizzaShopWebApp.Controllers
         {
             if (id == null)
                 return RedirectToAction("Index");
-
+            ViewData["PizzaId"] = id;
             return View("InfoProduct");
+        }
+
+        [HttpPost]
+        public string Show(Pizza pizza)
+        {
+            
+            return "Спасибо, " + ", за покупку!";
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

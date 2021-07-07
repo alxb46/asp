@@ -1,5 +1,7 @@
 ﻿@model IEnumerable<PizzaShopWebApp.Models.Pizza>
 
+
+
 <!DOCTYPE html>
 
 <html>
@@ -11,18 +13,20 @@
     <form method="post">
         @foreach (var pizza in Model)
         {
-            <div>
-                <img src=@pizza.Image />
-                <p>@pizza.Name</p>
-                <p>$ @pizza.Price </p>
-                <p>@pizza.Description</p>
-                <p>
-                    <a class="btn btn-primary" role="button" href="~/Home/Show/@pizza.Id">Show</a>
-                    <a class="btn btn-primary" role="button" href="~/Home/Buy/@pizza.Id">Buy</a>
-                </p>
-            </div>
+        <div>
+            <input type="hidden" value="@ViewBag.Id" name="Id" />
+            <img src=@pizza.Image name="Image" />
+            <p name="Name">@pizza.Name </p>
+            <p name="Price">$ @pizza.Price </p>
+            <p name="Description">@pizza.Description</p>
+            <p>
+                <a class="btn btn-primary" role="button" href="~/Home/Show/@pizza.Id">Show</a>
+                <input type="submit" value="Отправить" />
+                <a class="btn btn-primary" role="button" href="~/Home/Buy/@pizza.Id">Buy</a>
+            </p>
+        </div>
         }
     </form>
-   
+
 </body>
 </html>

@@ -1,4 +1,4 @@
-﻿@*@model PizzaShopWevApp.*@
+﻿@model IEnumerable<PizzaShopWebApp.Models.Pizza>
 
 <!DOCTYPE html>
 
@@ -7,13 +7,13 @@
     <title> Shop Pizza</title>
 </head>
 <body>
-    <h2>@Model.Name</h2>
+    <h2>@Model.ElementAt((int)ViewData["PizzaId"]).Id</h2>
     <div>
-        <img src=@Model.Image />
-        <p>$ @Model.Price </p>
-        <p>@Model.Description</p>
+        <img src=@Model.ElementAt((int)ViewBag.PizzaId).Image />
+        <p>$ @Model.ElementAt((int)ViewBag.PizzaId).Price </p>
+        <p>@Model.ElementAt((int)ViewBag.PizzaId).Description</p>
         <p>
-            <a class="btn btn-primary" role="button" href="~/Home/Buy/@Model.Id">Buy</a>
+            <a class="btn btn-primary" role="button" href="~/Home/Buy/@Model.ElementAt((int)ViewBag.PizzaId).Id">Buy</a>
         </p>
     </div>
 </body>
