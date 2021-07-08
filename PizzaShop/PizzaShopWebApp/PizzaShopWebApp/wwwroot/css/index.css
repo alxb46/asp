@@ -1,0 +1,13 @@
+﻿div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    width: 25%;
+    border: solid 2px black;
+    border-radius: 14px;
+}
+
+image {
+  /* выход картинки чтобы обрезало*/
+}

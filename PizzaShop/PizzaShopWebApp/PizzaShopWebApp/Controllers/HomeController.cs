@@ -27,8 +27,8 @@ namespace PizzaShopWebApp.Controllers
         {
             if (id == null)
                 return RedirectToAction("Index");
-            ViewData["PizzaId"] = id;
-            return View("InfoProduct");
+            ViewData["PizzaId"] = id-1;
+            return View("InfoProduct", db.Pizzas.ToList());
         }
 
         [HttpPost]

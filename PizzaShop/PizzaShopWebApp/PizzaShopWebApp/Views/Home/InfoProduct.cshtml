@@ -1,5 +1,9 @@
 ﻿@model IEnumerable<PizzaShopWebApp.Models.Pizza>
 
+@{
+    int index = (int)@ViewData["PizzaId"];
+    string pathPizza = "../" + $"{@Model.ElementAt(index).Image}";
+}
 <!DOCTYPE html>
 
 <html>
@@ -7,13 +11,13 @@
     <title> Shop Pizza</title>
 </head>
 <body>
-    <h2>@Model.ElementAt((int)ViewData["PizzaId"]).Id</h2>
+    <h2>@Model.ElementAt(@index).Name</h2>
     <div>
-        <img src=@Model.ElementAt((int)ViewBag.PizzaId).Image />
-        <p>$ @Model.ElementAt((int)ViewBag.PizzaId).Price </p>
-        <p>@Model.ElementAt((int)ViewBag.PizzaId).Description</p>
+        <img src=@pathPizza />
+        <p>$ @Model.ElementAt(@index).Price </p>
+        <p>@Model.ElementAt(@index).Description</p>
         <p>
-            <a class="btn btn-primary" role="button" href="~/Home/Buy/@Model.ElementAt((int)ViewBag.PizzaId).Id">Buy</a>
+            <a class="btn btn-primary" role="button" href="~/Home/Buy/@Model.ElementAt(@index).Id">Buy</a>
         </p>
     </div>
 </body>
