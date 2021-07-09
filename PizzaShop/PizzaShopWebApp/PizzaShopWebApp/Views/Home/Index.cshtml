@@ -22,18 +22,26 @@
                                 <input type="hidden" value="@ViewBag.Id" name="Id" />
                                 <div class="product-img">
                                     <img src=@pizza.Image name="Image" />
+                                    <a class="product-name" href="~/Home/Show/@pizza.Id"></a>
                                 </div>
                                 <div class="product-desc">
                                     <div class="product-top">
-                                        <a class="product-name" href="~/Home/Show/@pizza.Id"></a>
-                                        <span name="Name">@pizza.Name </span>
+                                        <div>
+                                            <a class="product-name" href="~/Home/Show/@pizza.Id">
+                                                <span name="Name" class="card-title">@pizza.Name </span>
+                                            </a>
+                                        </div>
+                                        
                                     </div>
-
-                                    <p name="Price">$ @pizza.Price </p>
-                                    <p name="Description">@pizza.Description</p>
+                                    <div class="product-text">
+                                        <span name="Description">@pizza.Description</span>
+                                    </div>
                                     <div class="product-bottom">
-                                        <a class="btn btn-primary" role="button" href="~/Home/Show/@pizza.Id">Show</a>
-                                        <a class="btn btn-primary" role="button" href="~/Home/Buy/@pizza.Id">Buy</a>
+                                        <div class="product-sum">
+                                            <span name="Price">$ @pizza.Price </span>
+                                        </div>
+                                        
+                                        <a class="btn btn-primary product-btn" role="button" href="~/Home/Buy/@pizza.Id">Buy</a>
                                     </div>
                                 </div>
                             </div>
@@ -44,8 +52,5 @@
             </form>
         </div>
     </div>
-    
-   
-
 </body>
 </html>

@@ -26,6 +26,7 @@ namespace PizzaShopWebApp
                     SampleData.InitializeIngredients(context);
                     SampleData.InitializePizzas(context);
                     SampleData.InitializePizzaIngredients(context);
+                   // SampleData.Initialize(context);
                 }
                 catch (Exception ex)
                 {

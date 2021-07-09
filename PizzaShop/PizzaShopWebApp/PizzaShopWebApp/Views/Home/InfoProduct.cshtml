@@ -1,25 +1,84 @@
-﻿@model IEnumerable<PizzaShopWebApp.Models.Pizza>
+﻿@model IEnumerable<PizzaShopWebApp.Models.PizzaIngredient>
+
 
 @{
     int index = (int)@ViewData["PizzaId"];
     //string pathPizza = "../" + $"{@Model.ElementAt(index).Image}";
-    string pathPizza =$"{@Model.ElementAt(index).Image}";
+    //string pathPizza = $"{@Model.ElementAt(index).Image}";
+    
+    //var pizzaIngredients = @Model.ElementAt(@index).PizzaIngredients;
+
 }
 <!DOCTYPE html>
 
 <html>
 <head>
     <title> Shop Pizza</title>
+    <link type="text/css" rel="stylesheet" href="~/css/InfoProduct.css" />
 </head>
 <body>
-    <h2>@Model.ElementAt(@index).Name</h2>
-    <div>
-        <img src=@pathPizza />
-        <p>$ @Model.ElementAt(@index).Price </p>
-        <p>@Model.ElementAt(@index).Description</p>
-        <p>
-            <a class="btn btn-primary" role="button" href="~/Home/Buy/@Model.ElementAt(@index).Id">Buy</a>
-        </p>
+    <div class="commodity">
+        <div class="conteiner">
+            <div class="commodity-main">
+                <div class="commodity-gallery desktop-only-fl">
+                    <div class="commodity-gallery__img image-root">
+                        <div class="image-containet">
+                            @*<img class="main-image" src=@pathPizza />*@
+                        </div>
+                    </div>
+                </div>
+                <div class="commodity-info">
+                    <div class="commodity-info__base">
+                        <div class="commodity-info__left">
+                            <div class="commodity-info__title">
+                                    @*<h1 class="title">@Model.ElementAt(@index).Name</h1>*@
+                            </div>
+                            <aside>
+                                <div class="price-container">
+                                    @*<p>$ @Model.ElementAt(@index).Price </p>*@
+
+                                </div>
+                                <div class="components-block">
+                                    <div class="components-block-header">
+                                        <h2 class="desktop-only"> Description </h2>
+                                    </div>
+                                    <div class="components-block-description">
+                                        @*@Model.ElementAt(@index).Description*@
+                                    </div>
+
+                                    <ul class="complement-list">
+                                        @*@foreach (var ingredient in pizzaIngredients)
+                                        {
+                                            <li class="complement-item">
+                                                <div class="complement-img">
+
+                                                </div>
+                                                <p class="complement-caption">
+                                                    @ingredient.Name
+                                                </p>
+                                            </li>
+                                        }*@
+                                    </ul>
+
+                                    <div>
+                                        @*<a class="btn btn-primary" role="button" href="~/Home/Buy/@Model.ElementAt(@index).Id">Buy</a>*@
+                                    </div>
+
+                                </div>
+                                
+                            </aside>
+                           
+                            
+                        </div>
+                       
+                    </div>
+                   
+                </div>
+            </div>
+           
+        </div>
     </div>
+   
 </body>
 </html>
+
