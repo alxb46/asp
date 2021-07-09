@@ -54,7 +54,7 @@ namespace PizzaShopWebApp.Models
                     new Pizza
                     {
                         Name = "4 cheese",
-                        Image = "../src/ImagesPizza/4_cheese.jpg",
+                        Image = "https://storage.smilefood.ua/storage/17/51/175169e45ed67c4c8b723f1b009b4b0d.jpg",
                         Price = 7,
                         Description = "Pizza with Parmesan cheese, " +
                         "Dor blue, Mozzarella, Hollandaise, paprika, " +

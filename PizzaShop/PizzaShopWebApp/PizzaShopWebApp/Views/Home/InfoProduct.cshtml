@@ -2,7 +2,8 @@
 
 @{
     int index = (int)@ViewData["PizzaId"];
-    string pathPizza = "../" + $"{@Model.ElementAt(index).Image}";
+    //string pathPizza = "../" + $"{@Model.ElementAt(index).Image}";
+    string pathPizza =$"{@Model.ElementAt(index).Image}";
 }
 <!DOCTYPE html>
 
