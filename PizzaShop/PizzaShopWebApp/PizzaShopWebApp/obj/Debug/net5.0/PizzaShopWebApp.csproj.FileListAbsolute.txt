@@ -68,3 +68,5 @@ C:\Users\Bojc_tq19\Desktop\ASP.NET\PizzaShop\PizzaShopWebApp\PizzaShopWebApp\obj
 C:\Users\Bojc_tq19\Desktop\ASP.NET\PizzaShop\PizzaShopWebApp\PizzaShopWebApp\obj\Debug\net5.0\PizzaShopWebApp.pdb
 C:\Users\Bojc_tq19\Desktop\ASP.NET\PizzaShop\PizzaShopWebApp\PizzaShopWebApp\obj\Debug\net5.0\PizzaShopWebApp.genruntimeconfig.cache
 C:\Users\Bojc_tq19\Desktop\ASP.NET\PizzaShop\PizzaShopWebApp\PizzaShopWebApp\obj\Debug\net5.0\Razor\Views\Home\InfoProduct.cshtml.g.cs
+C:\Users\Bojc_tq19\Desktop\ASP.NET\PizzaShop\PizzaShopWebApp\PizzaShopWebApp\bin\Debug\net5.0\Humanizer.dll
+C:\Users\Bojc_tq19\Desktop\ASP.NET\PizzaShop\PizzaShopWebApp\PizzaShopWebApp\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
