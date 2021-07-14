@@ -28,8 +28,9 @@ namespace PizzaShopWebApp.Controllers
             if (id == null)
                 return RedirectToAction("Index");
             ViewData["PizzaId"] = id-1;
-           // return View("InfoProduct", db.PizzaIngredients.ToList());
-            return View("InfoProduct", db.Pizzas.ToList());
+            // return View("InfoProduct", db.PizzaIngredients.ToList());
+            List<Pizza> pizzas = db.Pizzas.ToList();
+            return View("InfoProduct", pizzas);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

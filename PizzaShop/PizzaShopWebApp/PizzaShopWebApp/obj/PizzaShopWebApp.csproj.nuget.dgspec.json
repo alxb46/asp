@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alex\\Desktop\\ASP.NET\\PizzaShop\\PizzaShopWebApp\\PizzaShopWebApp\\PizzaShopWebApp.csproj": {}
+    "C:\\Users\\Bojc_tq19\\Desktop\\ASP.NET\\PizzaShop\\PizzaShopWebApp\\PizzaShopWebApp\\PizzaShopWebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alex\\Desktop\\ASP.NET\\PizzaShop\\PizzaShopWebApp\\PizzaShopWebApp\\PizzaShopWebApp.csproj": {
+    "C:\\Users\\Bojc_tq19\\Desktop\\ASP.NET\\PizzaShop\\PizzaShopWebApp\\PizzaShopWebApp\\PizzaShopWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alex\\Desktop\\ASP.NET\\PizzaShop\\PizzaShopWebApp\\PizzaShopWebApp\\PizzaShopWebApp.csproj",
+        "projectUniqueName": "C:\\Users\\Bojc_tq19\\Desktop\\ASP.NET\\PizzaShop\\PizzaShopWebApp\\PizzaShopWebApp\\PizzaShopWebApp.csproj",
         "projectName": "PizzaShopWebApp",
-        "projectPath": "C:\\Users\\Alex\\Desktop\\ASP.NET\\PizzaShop\\PizzaShopWebApp\\PizzaShopWebApp\\PizzaShopWebApp.csproj",
-        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alex\\Desktop\\ASP.NET\\PizzaShop\\PizzaShopWebApp\\PizzaShopWebApp\\obj\\",
+        "projectPath": "C:\\Users\\Bojc_tq19\\Desktop\\ASP.NET\\PizzaShop\\PizzaShopWebApp\\PizzaShopWebApp\\PizzaShopWebApp.csproj",
+        "packagesPath": "C:\\Users\\Bojc_tq19\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bojc_tq19\\Desktop\\ASP.NET\\PizzaShop\\PizzaShopWebApp\\PizzaShopWebApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bojc_tq19\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

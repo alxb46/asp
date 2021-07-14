@@ -54,6 +54,9 @@ namespace PizzaShopWebApp.Models
 
                 #endregion
 
+                List<Ingredient> ingredients_collection = new List<Ingredient>() { cream_sauce, paprika, oregano, parmesan_cheese, dor_blue_cheese, hard_cheese, mozzarella };
+               // four_chesse.Ingredients.AddRange(ingredients_collection);
+
 
                 Pizza four_chesse = new Pizza
                 {
@@ -62,7 +65,8 @@ namespace PizzaShopWebApp.Models
                     Price = 7,
                     Description = "Pizza with Parmesan cheese, " +
                           "Dor blue, Mozzarella, Hollandaise, paprika, " +
-                          "oregano and creamy sauce"
+                          "oregano and creamy sauce",
+                    Ingredients = ingredients_collection
                 };
                 Pizza jack_daniels = new Pizza
                 {
@@ -84,9 +88,7 @@ namespace PizzaShopWebApp.Models
                 };
 
                
-                List<Ingredient> ingredients_collection = new List<Ingredient>() { cream_sauce, paprika, oregano, parmesan_cheese, dor_blue_cheese, hard_cheese, mozzarella };
-                four_chesse.Ingredients.AddRange(ingredients_collection);
-
+              
                 ingredients_collection = new List<Ingredient>() { hunting_sausages, tomatoes, tomato_sauce, oregano, olive_oil,
                 green_onions, mozzarella, baked_chicken, roasted_mushrooms, red_onion };
                 jack_daniels.Ingredients.AddRange(ingredients_collection);
@@ -98,6 +100,9 @@ namespace PizzaShopWebApp.Models
                 _ = context.Pizzas.AddRangeAsync(
                    four_chesse, jack_daniels, hawaiian
               );
+
+                List<Pizza> pizzas = context.Pizzas.ToList();
+                List<Pizza> pizzas2 = pizzas;
 
                 _ = context.SaveChanges();
             }
