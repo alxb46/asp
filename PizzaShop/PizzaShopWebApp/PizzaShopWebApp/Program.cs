@@ -23,10 +23,7 @@ namespace PizzaShopWebApp
                 try
                 {
                     var context = services.GetRequiredService<PizzaContext>();
-                    SampleData.InitializeIngredients(context);
-                    SampleData.InitializePizzas(context);
-                    SampleData.InitializePizzaIngredients(context);
-                   // SampleData.Initialize(context);
+                    SampleData.Initialize(context);
                 }
                 catch (Exception ex)
                 {

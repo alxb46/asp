@@ -13,7 +13,7 @@ namespace PizzaShopWebApp.Models
         public int Price { get; set; }
         public string Description { get; set; }
 
-        public IList<PizzaIngredient> PizzaIngredients { get; set; }
+        public List<Ingredient> Ingredients { get; set; } = new List<Ingredient>();
 
     }
 }
