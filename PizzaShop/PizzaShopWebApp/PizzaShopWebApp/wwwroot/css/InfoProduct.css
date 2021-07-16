@@ -108,111 +108,14 @@ commodity-gallery__img > div:first-child {
     justify-content: space-between;
 }
 
-.commodity-info__left {
-    width: 100%;
-    color: #949599;
-}
-
-.commodity-info__left div {
-    color: inherit;
-}
-
-.commodity-info__title {
+#complement-list {
     display: flex;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
+        flex-direction: row;
+    justify-content: flex-start;
 }
 
-.title {
-    padding-top: 0px;
-}
-h1.title {
-    font-size: 30px;
-    font-weight: 700;
-    color: #303030;
-}
-
-.price-container {
-    display: flex;
-}
-
-
-.components-block {
-    background: #EBEBEB;
-    border-radius: 12px;
-}
-
-.components-block-header {
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 28px 0 28px;
-}
-
-.desktop-only {
-    display: block;
-}
-
-.components-block-description {
-    font-size: 14px;
-    line-height: 20px;
-    color: #303030;
-    padding: 10px 28px 0 28px;
-}
-
-.commodity-minor .complement-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 72px;
-    margin: 0.5em;
-}
-
-.complement.one .complement-img {
-    width: 45px;
-    height: 45px;
-}
-
-.commodity-minor .complement-img {
-    overflow: visible;
-    border: none;
-}
-
-
-element.style {
-    background-image: url(https://storage.smilefood.ua/storage/29/f9/29f9b6b….jpeg);
-}
-
-.complement.one .complement-img {
-    width: 45px;
-    height: 45px;
-}
-
-.commodity-minor .complement-img {
-    overflow: visible;
-    border: none;
-}
-
-.commodity-minor .complement-img {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #e8e8e8;
-    border-radius: 6px;
-    background: white no-repeat center;
-    background-size: contain;
-}
-
-.commodity-minor .complement-caption {
-    padding-top: 5px;
-}
-
-.commodity-minor .complement-caption {
-    padding: 0 5px;
-    font-size: 13px;
-    text-align: center;
-    color: #464646;
+li.complement-item{
+    display:block;
 }
 
 

@@ -4,9 +4,12 @@
 @{
     int index = (int)@ViewData["PizzaId"];
     //string pathPizza = "../" + $"{@Model.ElementAt(index).Image}";
-    //string pathPizza = $"{@Model.ElementAt(index).Image}";
-    
-    //var pizzaIngredients = @Model.ElementAt(@index).PizzaIngredients;
+    string pathPizza = $"{@Model.ElementAt(index).Image}";
+
+
+    Pizza currentPizza = @Model.ElementAt(index);
+
+    var pizzaIngredients = currentPizza.Ingredients;
 
 }
 <!DOCTYPE html>
@@ -23,7 +26,7 @@
                 <div class="commodity-gallery desktop-only-fl">
                     <div class="commodity-gallery__img image-root">
                         <div class="image-containet">
-                            @*<img class="main-image" src=@pathPizza />*@
+                            <img class="main-image" src=@pathPizza />
                         </div>
                     </div>
                 </div>
@@ -31,24 +34,24 @@
                     <div class="commodity-info__base">
                         <div class="commodity-info__left">
                             <div class="commodity-info__title">
-                                    @*<h1 class="title">@Model.ElementAt(@index).Name</h1>*@
+                                <h1 class="title">@currentPizza.Name</h1>
                             </div>
                             <aside>
                                 <div class="price-container">
-                                    @*<p>$ @Model.ElementAt(@index).Price </p>*@
+                                    <p>$ @currentPizza.Price </p>
 
                                 </div>
                                 <div class="components-block">
                                     <div class="components-block-header">
-                                        <h2 class="desktop-only"> Description </h2>
+                                        <h3 class="desktop-only"> Description </h3>
                                     </div>
                                     <div class="components-block-description">
-                                        @*@Model.ElementAt(@index).Description*@
+                                        @currentPizza.Description
                                     </div>
 
-                                    <ul class="complement-list">
-                                        @*@foreach (var ingredient in pizzaIngredients)
-                                        {
+                                    <ul id="complement-list">
+                                        @foreach (var ingredient in pizzaIngredients)
+                                         {
                                             <li class="complement-item">
                                                 <div class="complement-img">
 
@@ -57,11 +60,11 @@
                                                     @ingredient.Name
                                                 </p>
                                             </li>
-                                        }*@
+                                         }
                                     </ul>
 
                                     <div>
-                                        @*<a class="btn btn-primary" role="button" href="~/Home/Buy/@Model.ElementAt(@index).Id">Buy</a>*@
+                                        <a class="btn btn-primary" role="button" href="~/Home/Buy/@currentPizza.Id">Buy</a>
                                     </div>
 
                                 </div>

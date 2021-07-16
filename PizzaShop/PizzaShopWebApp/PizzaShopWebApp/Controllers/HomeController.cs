@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using PizzaShopWebApp.Models;
 using System;
@@ -29,7 +30,7 @@ namespace PizzaShopWebApp.Controllers
                 return RedirectToAction("Index");
             ViewData["PizzaId"] = id-1;
             // return View("InfoProduct", db.PizzaIngredients.ToList());
-            List<Pizza> pizzas = db.Pizzas.ToList();
+            List<Pizza> pizzas = db.Pizzas.Include(p => p.Ingredients).ToList();
             return View("InfoProduct", pizzas);
         }
 
