@@ -9,6 +9,7 @@ namespace PizzaShopWebApp.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public int Price { get; set; }
         public List<Pizza> Pizzas { get; set; } = new List<Pizza>();
     }
 }
