@@ -1,0 +1,115 @@
+﻿@model Pizza
+
+@{
+    string? pathImg = Model.Image;
+}
+
+<head>
+    <title> Info Pizza</title>
+    <link type="text/css" rel="stylesheet" href="~/css/info_pizza.css" />
+</head>
+<div class="main_container">
+    <div class="imgs_container">
+        <div class="all_img_container">
+            <div><img src="/@pathImg" /></div>
+            <div><img src="/@pathImg" /></div>
+            <div><img src="/@pathImg" /></div>
+        </div>
+        <div class="main_img_container">
+            <div><img src="/@pathImg" /></div>
+        </div>
+        
+    </div>
+    <div class="info_container">
+        <div>
+            <div class="name_container">
+                <h1 class="title">@Model.Name</h1>
+            </div>
+            <div class="prop_container"> Ø 30 см, Вес 450 г </div>
+            <div class="price_container"> <span class="price_val">@Model.Price</span> <span>UAH</span></div>
+        </div>
+        <div class="main_order_container">
+            <div class="product-addition-nmb">
+                <button class="product-addition-minus" id="minusElem">-</button>
+                <input class="product-addition-input" type="number" value="1" min="1" size="5" id="elem">
+                <button class="product-addition-plus" id="plusElem">+</button>
+            </div>
+            <div class="submit_container"> <input type="submit" value="Order" class="order_button" /></div>
+            <button class="like_container" id="likeContainer"></button>
+        </div>
+        
+        <table class="table_container">
+            <tbody>
+                <tr class="calories_container">
+                    <td> Calories 100 г </td>
+                    <td> 000ккал </td>
+                </tr>
+                <tr class="protein_container">
+                    <td> Proteins </td>
+                    <td> 00g </td>
+                </tr>
+                <tr class="fat_container">
+                    <td> Fats </td>
+                    <td> 00g </td>
+                </tr>
+                <tr class="carbohydrat_container">
+                    <td> Carbohydrates </td>
+                    <td> 00 г </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</div>
+<div class="details_container">
+    <div class="component_header">
+        <h2>Compound</h2> 
+    </div>
+    <div class="components-block-description">
+        @Model.Description
+    </div>
+    <div class="ingredients_container">
+        @foreach (Ingredient ingredient in Model.Ingredients)
+        {
+        <div class="ingredient">
+            <img src="/@ingredient.Image" class="img_ingredient"/>
+            <p class="name_ingredient"> @ingredient.Name</p>
+        </div>
+        }
+
+    </div>
+</div>
+
+<script>
+    let stateHeart = true;
+
+    plusElem.onclick = function () {
+        if (elem.value < 100) {
+            elem.value++;
+        }
+
+    };
+    minusElem.onclick = function () {
+        if (elem.value > 1) {
+            elem.value--;
+        }
+
+    };
+
+    likeContainer.onclick = function () {
+
+        if (stateHeart == true) {
+            likeContainer.style.backgroundImage = "url('/Pictures/icons/heart_after.png')";
+            stateHeart = false;
+        }
+        else {
+            likeContainer.style.backgroundImage = "url('/Pictures/icons/heart_before.png')";
+            stateHeart = true;
+        }
+
+        @*document.getElementById("likeContainer").style.width = "100px";
+        document.getElementById("likeContainer").style.backgroundImage = url("/Pictures/icons/heart_after.png");*@
+
+    }
+
+</script>

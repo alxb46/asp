@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Pizza>
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title> Shop Pizza</title>
+    <link type="text/css" rel="stylesheet" href="~/css/home.css" />
+</head>
+<body>
+    <div class="container">
+        <h3>Pizzas</h3>
+        <div class="catalogue-products">
+            <form method="post" class="catalogue">
+                <ul class="catalogue-products__list">
+                    @foreach (var pizza in Model)
+                    {
+                        <li class="catalogue-products__item">
+                            <div class="product">
+                                <input type="hidden" value="@ViewBag.Id" name="Id" />
+                                <div class="product-img">
+                                    <img src="@pizza.Image" name="Image" />
+                                    <a class="product-name" href="~/product/@pizza.Id"></a>
+                                </div>
+                                <div class="product-desc">
+                                    <div class="product-top">
+                                        <div>
+                                            <a class="product-name" href="~/product/@pizza.Id">
+                                                <span name="Name" class="card-title">@pizza.Name </span>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product-text">
+                                        <span name="Description">@pizza.Description</span>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <div class="product-sum">
+                                            <span name="Price">@pizza.Price UAH</span>
+                                        </div>
+
+                                        <a class="btn btn-primary product-btn" role="button" href="~/buy/@pizza.Id">Buy</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    }
+                </ul>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

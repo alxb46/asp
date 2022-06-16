@@ -1,0 +1,375 @@
+﻿* {
+
+    margin: 0;
+    padding: 0;
+}
+
+.main_container,
+.imgs_container,
+.info_container,
+.details_container,
+.all_img_container,
+.main_img_container {
+
+    display: flex;
+/*    border: solid 1px black;*/
+}
+
+.main_container {
+
+    width: 90vw;
+    height: 65vh;
+    flex-direction: row;
+    margin-top: 70px;
+}
+
+.imgs_container {
+
+    flex-grow: 1;
+
+}
+
+.info_container {
+
+    flex-grow: 2;
+}
+
+.imgs_container {
+
+    flex-direction: row;
+}
+
+.all_img_container {
+
+    flex-grow: 1;
+    flex-direction:column;
+}
+
+
+
+.main_img_container {
+
+    flex-grow: 6;
+}
+
+.all_img_container > div,
+.main_img_container > div {
+
+    display: flex;   
+}
+
+.all_img_container > div {
+    margin-bottom: 10px;
+    width: 100px;
+}
+
+.main_img_container > div {
+    /*    width: 450px;*/
+    width: 50vh;
+
+}
+
+.main_img_container > div > img {
+
+    width: 33vw;
+    height: 33vw;
+    border-radius: 14px;
+}
+
+.all_img_container > div > img{
+
+    width: 100%;
+    border-radius: 14px;
+}
+/*
+    <div class="imgs_container">
+        <div class="all_img_container">
+            <div><img src="/@pathImg" /></div>
+            <div><img src="/@pathImg" /></div>
+            <div><img src="/@pathImg" /></div>
+        </div>
+        <div class="main_img_container">
+            <div><img src="/@pathImg" /></div>
+        </div>
+
+*/
+.info_container {
+    flex-direction: column;
+    padding-left: 80px;
+}
+
+.name_container {
+    margin: 40px 0px 0px 0px
+}
+.name_container > h1 {
+    font-family: Roboto, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.main_order_container {
+    display:flex;
+    flex-direction:row;
+/*    justify-content:space-between;*/
+}
+
+.prop_container {
+    color: rgb(148, 149, 153);
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    height: auto;
+    margin-bottom: 30px;
+    font-weight:200;
+}
+
+.price_val {
+    color: rgb(48, 48, 48);
+    display: inline;
+    font-family: Roboto, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    height: auto;
+    
+}
+.price_container {
+    margin-bottom: 10px;
+}
+.price_container span:last-child {
+    color: rgb(148, 149, 153);
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.product-addition-nmb {
+    display: flex;
+}
+
+.product-addition-input {
+    background: #FFFFFF;
+    height: 55px;
+    border: 1px solid #EBEBEB;
+    width: 51px !important;
+    min-width: 51px;
+    display: inline-block;
+    border-radius: 0;
+    font-size: 16px;
+    text-align: center;
+    color: #949599;
+    transition: border 0.25s;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    line-height: inherit;
+}
+
+.product-addition-input::-webkit-outer-spin-button,
+.product-addition-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.product-addition-minus, .product-addition-plus {
+    height: 55px;
+    width: 51px !important;
+    min-width: 51px;
+    background: #FFFFFF;
+    color: #0d6efd;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.15s;
+    text-align: center;
+    border: none;
+    overflow: hidden;
+    border-top: 1px solid #EBEBEB;
+    border-bottom: 1px solid #EBEBEB;
+    font-family: "Roboto", sans-serif;
+}
+
+    .product-addition-minus:hover, .product-addition-plus:hover {
+        background: #0d6efd;
+        color: #fff;
+    }
+
+    .product-addition-minus:active, .product-addition-plus:active, .order_button:hover {
+        background: #025ce3;
+        color: #fff;
+    }
+
+.product-addition-minus {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-left: 1px solid #EBEBEB;
+}
+.product-addition-plus {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-right: 1px solid #EBEBEB;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.submit_container {
+    display: flex;
+/*    margin: 0px 20px 0px 0px*/
+/*base elem flex */
+
+}
+
+.order_button {
+    height: 55px;
+    width: 250px;
+    font-size: 19px;
+    letter-spacing: 0.05em;
+    box-shadow: 0 17px 20px -14px rgba(26, 140, 255, 0.7);
+    border: 0;
+    border-radius: 5px;
+    margin: 0;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: none;
+    text-align: center;
+    color: #fff;
+    background-color: #0d6efd;
+
+    position:relative;
+    left: 30px;
+}
+
+.like_container {
+    /* margin-bottom: 20px!important; */
+    width: 55px !important;
+    height: 55px !important;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    background-image: url(/Pictures/icons/heart_before.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: white;
+
+    position: relative;
+    left: 60px;
+}
+
+.table_container {
+/*    border: solid 1px black;*/
+    margin-top: 70px;
+    width: 36vw;
+    position:relative;
+}
+
+.calories_container, .protein_container, .fat_container, .carbohydrat_container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 16px;
+    color: #303030 !important;
+    padding: 6px 10px;
+}
+
+.table_container > tr > td {
+    font-size: 14px;
+    line-height: 16px;
+    color: #303030 !important;
+}
+
+.calories_container, .fat_container {
+    background: #EBEBEB;
+    border-radius: 5px;
+}
+
+.details_container {
+    background: #EBEBEB;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 45.3%;
+    height: 50%;
+}
+
+.component_header {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 28px 0 28px;
+    font-size: 1.5rem;
+}
+.components-block-description {
+    display:flex;
+    font-size: 14px;
+    line-height: 20px;
+    color: #303030;
+    padding: 10px 28px 0 28px;
+}
+
+.ingredients_container {
+    display: flex;
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 1.2em 0.95em;
+    flex-wrap: wrap;
+    -webkit-box-shadow: none;
+}
+.ingredient {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 72px;
+    margin: 0.5em;
+    
+}
+
+.img_ingredient {
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 6px;
+}
+
+.name_ingredient {
+    padding-top: 5px;
+    font-size: 13px;
+    text-align: center;
+    color: #464646;
+    margin: 0;
+}
+/*    .like_container:hover {
+        background-color: #0d6efd;
+    }*/
+
+/*
+     <div class="info_container">
+        <div>
+            <div>@Model.Name</div>
+            <div> Ø 30 см, Вес 450 г </div>
+            <div> @Model.Price</div>
+        </div>
+        <div>Count 1</div>
+        <div> <button value="Заказать"></button></div>
+        <table>
+            <tbody>
+                <tr>
+                    <td> Калорийность на 100 г </td>
+                    <td> 000ккал </td>
+                </tr>
+                <tr>
+                    <td> Белки </td>
+                    <td> 00g </td>
+                </tr>
+                <tr>
+                    <td> Жиры </td>
+                    <td> 00g </td>
+                </tr>
+                <tr>
+                    <td> Углеводы </td>
+                    <td> 29 г </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+*/
+
