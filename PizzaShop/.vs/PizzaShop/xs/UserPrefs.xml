@@ -1,10 +1,23 @@
 ﻿<Properties StartupConfiguration="{4A4AAF7D-80E9-4566-8138-5DF367061AEE}|Default">
+  <MonoDevelop.Ide.ItemProperties.PizzaShop PreferredExecutionTarget="/Applications/Safari.app" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="PizzaShop/wwwroot/css/site.css">
+    <Files>
+      <File FileName="PizzaShop/Models/Pizza.cs" Line="18" Column="42" />
+      <File FileName="PizzaShop/Configurations/PizzaConfiguration.cs" Line="42" Column="44" />
+      <File FileName="PizzaShop/wwwroot/css/info_pizza.css" Line="177" Column="19" />
+      <File FileName="PizzaShop/Views/Home/PizzaInfo.cshtml" Line="27" Column="19" />
+      <File FileName="PizzaShop/Views/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="PizzaShop/Views/Shared/_Layout.cshtml" Line="20" Column="66" />
+      <File FileName="PizzaShop/wwwroot/css/site.css" Line="70" Column="16" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="PizzaShop" expanded="True" selected="True">
+          <Node name="PizzaShop" expanded="True">
             <Node name="PizzaShop" expanded="True">
               <Node name="Dependencies" expanded="True" />
               <Node name="Configurations" expanded="True" />
@@ -12,10 +25,14 @@
               <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
-                <Node name="css" expanded="True" />
+                <Node name="css" expanded="True">
+                  <Node name="site.css" selected="True" />
+                </Node>
                 <Node name="Pictures" expanded="True">
+                  <Node name="icons" expanded="True" />
                   <Node name="Ingredients" expanded="True" />
                 </Node>
               </Node>
@@ -28,10 +45,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.PizzaShop PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

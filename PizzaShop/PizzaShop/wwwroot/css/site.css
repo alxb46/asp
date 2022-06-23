@@ -16,3 +16,101 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.header {
+    background: #383838;
+    color: #f4f4f4;
+}
+.container-fluid {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 0 0 14px;
+    width: 100%;
+    max-width: 1200px;
+    
+}
+
+/*.navbar-brand {
+    
+}*/
+
+.link-home {
+    color: #f4f4f4;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header-top__menu-list {
+    display: flex;
+    margin: 0;
+    border: solid 1px black;
+}
+.header-top__menu-item {
+    position: relative;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    font-size: 26px;
+/*    border: solid 1px black;*/
+}
+
+.header-top__menu-item::after {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    content: '';
+    display: block;
+    width: 1px;
+    height: 54px;
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+button.header-search-toggle, button.header-heart-toggle, button.header-user-toggle {
+    border: 0;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.4);
+    transition: color 0.15s;
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+button.header-heart-toggle {
+
+}
+
+
+.icon-search, .icon-heart, .icon-user {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 0px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.icon-search {
+    background-image: url("/Pictures/icons/search_before.png");
+}
+
+.icon-heart {
+    background-image: url("/Pictures/icons/icon_heart_before.png");
+}
+
+.icon-user {
+    background-image: url("/Pictures/icons/icon_user_before.png");
+}

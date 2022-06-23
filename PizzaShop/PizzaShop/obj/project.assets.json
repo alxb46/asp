@@ -1776,11 +1776,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/apple/Projects/PizzaShop/PizzaShop/PizzaShop.csproj",
+      "projectUniqueName": "/Users/apple/Documents/GitHub/asp/PizzaShop/PizzaShop/PizzaShop.csproj",
       "projectName": "PizzaShop",
-      "projectPath": "/Users/apple/Projects/PizzaShop/PizzaShop/PizzaShop.csproj",
+      "projectPath": "/Users/apple/Documents/GitHub/asp/PizzaShop/PizzaShop/PizzaShop.csproj",
       "packagesPath": "/Users/apple/.nuget/packages/",
-      "outputPath": "/Users/apple/Projects/PizzaShop/PizzaShop/obj/",
+      "outputPath": "/Users/apple/Documents/GitHub/asp/PizzaShop/PizzaShop/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/apple/.nuget/NuGet/NuGet.Config"
@@ -1834,7 +1834,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
       }
     }
   }

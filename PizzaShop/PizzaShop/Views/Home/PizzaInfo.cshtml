@@ -25,7 +25,7 @@
             <div class="name_container">
                 <h1 class="title">@Model.Name</h1>
             </div>
-            <div class="prop_container"> Ø 30 см, Вес 450 г </div>
+            <div class="prop_container"> Ø 30 cm, @Model.Weight g </div>
             <div class="price_container"> <span class="price_val">@Model.Price</span> <span>UAH</span></div>
         </div>
         <div class="main_order_container">
@@ -41,20 +41,20 @@
         <table class="table_container">
             <tbody>
                 <tr class="calories_container">
-                    <td> Calories 100 г </td>
-                    <td> 000ккал </td>
+                    <td> Calories 100 g </td>
+                    <td> @Model.Calories kcal </td>
                 </tr>
                 <tr class="protein_container">
                     <td> Proteins </td>
-                    <td> 00g </td>
+                    <td> @Model.Proteins g </td>
                 </tr>
                 <tr class="fat_container">
                     <td> Fats </td>
-                    <td> 00g </td>
+                    <td> @Model.Fats g </td>
                 </tr>
                 <tr class="carbohydrat_container">
                     <td> Carbohydrates </td>
-                    <td> 00 г </td>
+                    <td> @Model.Carbohydrates g </td>
                 </tr>
             </tbody>
         </table>
